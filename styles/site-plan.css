@@ -21,7 +21,7 @@ Fonts are separated by a | */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
   --nav-link-color: #396E94;
-  --nav-background-color: #44cdff;
+  --nav-background-color: #00bbff;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
@@ -30,41 +30,103 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  
 }
+
+.clickers{
+  display: grid;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.clicky{
+  display: grid;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.able{
+  grid-column: 1/2;
+}
+
+.applied{
+  grid-column: 2/3;
+}
+
+.eater{
+  grid-column: 3/4;
+}
+
+.hero-img{
+  max-width: 2000px;
+padding-top: 5%;
+}
+
 img {
+  
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
+
+.logo{
+  max-width: 100%;
+}
+
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  background-color: rgb(79, 127, 194);
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 0.5%;
+  display: grid;
+  grid-template-columns: 150px auto;
+  width: 100%;
+
 }
 
-.logo{
-  width: 100px;
+.copy{
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
+
+.file{
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+.music{
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+
+
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+
+}
+
+
 
 p {
   font-family: var(--paragraph-font);
@@ -133,10 +195,11 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+
 }
 nav  {
   list-style-type: none;
-  display: flex;
+  display: flex
 
 }
 nav a {
@@ -170,6 +233,8 @@ nav a:hover {
   text-align: center;
 
 }
+
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
@@ -203,3 +268,29 @@ nav a:hover {
   border-right: 1px solid;
 }
 
+.social{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+footer{
+    background-color: var(--accent1-color) ;
+    padding-top: 1% ;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    font-family: Georgia;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+footer p a{
+   
+  text-decoration: none;
+  font-family: Georgia;
+  color: var(--headline-color-on-white);
+   
+}
