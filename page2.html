@@ -26,19 +26,19 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="./images/images.jpg" style="width:100%">
+      <img src="./images/images.jpg" style="width:100%" alt="music">
       <div class="text">Piano Music</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="./images/piano-music-instrument-keys.jpg" style="width:100%">
+      <img src="./images/piano-music-instrument-keys.jpg" style="width:100%" alt="music">
       <div class="text">Piano Music and Keys</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="./images/Classic_music.jpg" style="width:100%">
+      <img src="./images/Classic_music.jpg" style="width:100%" alt="music">
       <div class="text">Sheet Music</div>
     </div>
   
@@ -56,19 +56,16 @@
   </div>
 
   <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
+    let slideIndex = 1;showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -84,8 +81,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-  </script>
-   
+</script>
+    <section>
+        <img src="./images/normal_old_music.png" alt="old music">
+    </section>
     <h1>Application Services</h1>
         <img src="./images/free-email-1767971-1502307.webp" alt="picture of email icon">
         <p>Apply Here using you email and we will send you an application! The process is quick and easy. The first application will take about 5 minutes and then once that is completed we will send you background check/ information sheet about the postition of content creater, teacher, or seller online.</p>
